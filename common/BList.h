@@ -44,8 +44,8 @@ class BList {
 		
 		// Query
 		bool HasItem(void* item) const;
-		int32 IndexOf(void* item) const;
-		int32 CountItems() const;
+		int32_t IndexOf(void* item) const;
+		int32_t CountItems() const;
 		bool IsEmpty() const;
 		
 		// Iteration

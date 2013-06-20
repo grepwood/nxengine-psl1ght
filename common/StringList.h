@@ -9,7 +9,7 @@ class StringList : protected BList
 public:
 	StringList() { }
 	
-	StringList(const StringList &other)
+	StringList (const StringList &other) : BList()
 	{
 		*this = other;
 	}

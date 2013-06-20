@@ -15,9 +15,9 @@ namespace Sprites
 	void Close();
 	void FlushSheets();
 	
-	static void LoadSheetIfNeeded(int spr);
+	void LoadSheetIfNeeded(int spr);
 	
-	static void BlitSprite(int x, int y, int s, int frame, uint8_t dir, \
+	void BlitSprite(int x, int y, int s, int frame, uint8_t dir, \
 						int xoff, int yoff, int wd, int ht);
 
 

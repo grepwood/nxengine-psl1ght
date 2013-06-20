@@ -532,7 +532,7 @@ void speed_test(void)
 
 void speed_test(void)
 {
-	SDL_Rect textrect;
+//	SDL_Rect textrect;
 	SDL_Surface *vram = screen->GetSDLSurface();
 	int click = 0;
 	
@@ -540,7 +540,7 @@ void speed_test(void)
 	fps = 0;
 	
 	SDL_FillRect(vram, NULL, SDL_MapRGB(vram->format, 255, 0, 0));
-	int c = 0;
+//	int c = 0;
 	
 	game.running = true;
 	while(game.running)
