@@ -20,7 +20,7 @@ int framecount = 0;
 bool freezeframe = false;
 int flipacceltime = 0;
 
-int main(int argc, char *argv[])
+int main()
 {
 bool inhibit_loadfade = false;
 bool error = false;
