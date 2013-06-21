@@ -151,14 +151,14 @@ int stringlength = strlen(str);
 void fgetcsv(FILE *fp, char *str, int maxlen)
 {
 int i, j;
-char ch;
+signed char ch;
 
 	maxlen--;
 	for(i=j=0;i<maxlen;i++)
 	{
 		ch = fgetc(fp);
 		
-		if (ch==13 || ch==',' || ch=='}' || ch==-1)
+		if (ch==13 || ch==',' || ch=='}' || ch==-1) //-1 would be 255 for unsigned
 		{
 			break;
 		}
