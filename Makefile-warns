@@ -33,7 +33,7 @@ nx:  main.o game.o object.o ObjManager.o \
 	 autogen/objnames.o stagedata.o common/FileBuffer.o common/InitList.o common/BList.o \
 	 common/StringList.o common/DBuffer.o common/DString.o common/bufio.o common/stat.o \
 	 common/misc.o
-	$(CXX) -o nx \
+	$(CXX) -o nx.elf \
 	 main.o game.o object.o ObjManager.o \
 	 map.o TextBox/TextBox.o TextBox/YesNoPrompt.o TextBox/ItemImage.o TextBox/StageSelect.o \
 	 TextBox/SaveSelect.o profile.o settings.o platform.o \
@@ -64,7 +64,7 @@ nx:  main.o game.o object.o ObjManager.o \
 	 common/StringList.o common/DBuffer.o common/DString.o common/bufio.o common/stat.o \
 	 common/misc.o \
 	 `$(SDL_CONFIG) --libs` -lSDL_ttf -lfreetype -lz -lstdc++ -lm
-	make_self nx nx.self
+	make_self nx.elf nx.self
 
 main.o:	main.cpp main.fdh nx.h config.h \
 		common/basics.h common/BList.h common/SupportDefs.h \
@@ -2263,7 +2263,7 @@ common/misc.o:	common/misc.cpp common/misc.fdh common/basics.h
 
 
 clean:
-	rm -f nx
+	rm -f nx.elf
 	rm -f nx.self
 	rm -f main.o
 	rm -f game.o

@@ -18,6 +18,7 @@ static struct TickFunctions
 	bool (*OnEnter)(int param);
 	void (*OnExit)(void);
 }
+
 tickfunctions[] =
 {
 	NULL,				NULL,			NULL,			// GM_NONE
@@ -30,7 +31,7 @@ tickfunctions[] =
 	title_tick,			title_init,		NULL,			// GM_TITLE
 	pause_tick,			pause_init,		NULL,			// GP_PAUSED
 	options_tick,		options_init,	options_close	// GP_OPTIONS
-	//old_options_tick,		old_options_init,	old_options_close	// GP_OPTIONS
+//	old_options_tick,	old_options_init,	old_options_close	// GP_OPTIONS
 };
 
 Object *onscreen_objects[MAX_OBJECTS];

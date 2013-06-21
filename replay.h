@@ -89,13 +89,13 @@ namespace Replay
 	void FramesToTime(int framecount, char *buffer);
 	int GetPlaybackPosition(int max);
 	
-	uint32_t EncodeBits(bool *values, int nvalues);
-	void DecodeBits(uint32_t value, bool *array, int len);
+	static uint32_t EncodeBits(bool *values, int nvalues);
+	static void DecodeBits(uint32_t value, bool *array, int len);
 	
-	void run_record();
-	void run_playback();
+	static void run_record();
+	static void run_playback();
 	
-	int GetAvailableSlot(void);
+	static int GetAvailableSlot(void);
 };
 
 

@@ -31,7 +31,7 @@ public:
 	void SwapItems(int index1, int index2);
 	void DumpContents();
 	
-	int32_t CountItems() const { return BList::CountItems(); }
+	int32 CountItems() const { return BList::CountItems(); }
 	
 	StringList &operator= (const StringList &other);
 	bool operator== (const StringList &other) const;
